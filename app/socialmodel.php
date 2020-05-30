@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
 
 class socialmodel extends Model
 {
@@ -12,7 +13,7 @@ class socialmodel extends Model
     public function user(){
 
 
-      return   $this->belongsTo(socialmodel :: class);
+      return   $this->belongsTo(User:: class);
 
 
     }

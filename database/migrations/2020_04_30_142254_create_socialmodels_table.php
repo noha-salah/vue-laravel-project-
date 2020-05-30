@@ -16,7 +16,7 @@ class CreateSocialmodelsTable extends Migration
         Schema::create('socialmodels', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->string('provider_id');
+            $table->string('provider_id')->unique();
             $table->string('provider_name');
             
 
